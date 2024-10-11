@@ -1,0 +1,252 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CheeryBlosooms of Korea</title>
+    
+    <!-- Link to Google Fonts for custom fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Reset default margin and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        /* Set default font family for the body */
+        body 
+        {
+            font-family: 'Montserrat', sans-serif;
+            color: #333; /* Default text color */
+        }
+
+        /* Styling for the hero section with background image */
+        .home 
+        {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            background: url('korea.jpeg'); /* Background image */
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff; /* White text */
+        }
+
+        /* Semi-transparent overlay for the left half of the screen */
+        .home::before 
+        {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 50%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.5); /* Light overlay */
+        }
+
+        /* Styling for the content inside the hero section */
+        .content 
+        {
+            position: relative;
+            padding: 0 20px;
+        }
+
+        /* Styling for the main heading (korea) */
+        h2 
+        {
+            font-size: 250px;
+            margin: 0;
+            font-family: 'Playfair Display', serif;
+            padding: 0 0 70px 20px;
+        }
+
+        /* Applying background image inside text for 'korea' */
+        h2 span 
+        {
+            color: transparent;
+            background-clip: text;
+            -webkit-background-clip: text;
+            background-image: url('korea.jpeg'); /* Background for text */
+            -webkit-text-stroke: 2px white; /* White border around letters */
+        }
+
+        /* Styling for the subtitle (cheeryblossom) */
+        h6 
+        {
+            margin: 81px;
+            font-size: 100px;
+            color: #fff;
+        }
+
+        /* Navbar styling for navigation links and icons */
+        .navbar 
+        {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            z-index: 10;
+        }
+
+        /* Styling for the navigation links */
+        .navbar .nav-links 
+        {
+            display: flex;
+            gap: 15px; /* Space between links */
+        }
+
+        /* Individual navigation link styling */
+        .navbar a 
+        {
+            color: white;
+            text-decoration: none;
+            font-size: 25px;
+            font-family: 'Poppins', sans-serif;
+            padding: 12px 30px;
+            border-radius: 5px;
+            transition: background 0.3s; /* Hover transition effect */
+        }
+
+        /* Hover effect for navigation links */
+        .navbar a:hover 
+        {
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        /* Styling for social media icons in navbar */
+        .navbar .nav-icons 
+        {
+            display: flex;
+            gap: 15px; /* Space between icons */
+        }
+
+        /* Individual icon styling */
+        .navbar ion-icon 
+        {
+            border: 4px solid white;  /* White border around icon */
+            padding: 10px;
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 5px; /* Square icons with slight rounding */
+        }
+
+        /* Styling for the button */
+        .button 
+        {
+            padding: 10px 20px;
+            background-color: #fff;
+            color: #333;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+            margin-top: 20px;
+            border-radius: 5px;
+            transition: background 0.3s; /* Hover transition */
+        }
+
+        /* Hover effect for the button */
+        .button:hover 
+        {
+            background-color: #f0f0f0;
+        }
+
+        /* General section styling for content sections */
+        section 
+        {
+            padding: 60px 0px;
+            text-align: center;
+        }
+    .about
+    {
+
+            background-clip: text;
+            color: transparent;
+            background-image: url(wallpaperflare.com_wallpaper\ \(1\).jpeg);
+
+            -webkit-background-clip: text;
+            background-image: url('wallpaperflare.com_wallpaper\ \(1\).jpeg'); /* Background for text */
+            /* -webkit-text-stroke: 2px white; White border around letters */
+
+    }
+    .gallery
+    {
+        background-image: url(wallpaperflare.com_wallpaper\ \(1\).jpeg);
+        color: rgb(246, 217, 186);
+
+    }
+    .gallerkeniche
+    {
+        display: flex; 
+        justify-content: center;
+         flex-wrap: wrap;
+          top: 10px;
+          gap: 10px;
+          padding:10 px ;
+    }
+
+    .activities
+    {
+        background-image: url(korea.jpeg);
+    }
+        /* Footer styling */
+        footer 
+        {
+            background-color: #333; /* Dark background */
+            color: white;
+            text-align: left;
+            padding: 20px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar with icons and navigation links -->
+    <header class="head">
+        <div class="navbar">
+            <!-- Social media icons -->
+            <div class="nav-icons">
+                <span class="spanicon"><ion-icon name="paper-plane-sharp"></ion-icon></span>
+                <span class="spanicon"><ion-icon name="logo-instagram"></ion-icon></span>
+                <span class="spanicon"><ion-icon name="logo-twitter"></ion-icon></span>
+                <span class="spanicon"><ion-icon name="logo-whatsapp"></ion-icon></span>
+            </div>
+            <!-- Navigation links -->
+            <div class="nav-links">
+                <a href="#">Destinations</a>
+                <a href="#">Booking</a>
+                <a href="#">Services</a>
+                <a href="#">Contact us</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero section with main content -->
+    <section class="home">
+        <div class="content">
+            <!-- Main heading with stylized "korea" text -->
+            <h2><span>Ko</span>rea</h2>
+            <h6>CheeryBlosooms</h6>
+            <!-- Call-to-action button -->
+            <button class="button">More Details</button>
+        </div>
+    </section>
+
+
+
+    <!-- Ionicons script for loading social media icons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
